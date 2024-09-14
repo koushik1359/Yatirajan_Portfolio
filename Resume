@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yatirajan - Archaka & Yagnacharya Portfolio">
+    <title>Yatirajan - Archaka & Yagnacharya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2f44;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .profile-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-image: url('https://i.imgur.com/ZUrj0Mu.png'); /* Your image URL */
+            background-size: cover;
+            background-position: center 35%;
+            position: relative;
+            padding: 100px 20px;
+            color: white;
+            border-radius: 12px;
+            filter: brightness(2.5);
+        }
+
+        .profile-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Reduced opacity for better contrast */
+            border-radius: 12px;
+        }
+
+        .profile-section .content {
+            width: 40%;
+            margin-right: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3); /* Background to help text readability */
+            border-radius: 10px;
+        }
+
+        .profile-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .profile-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 30px;
+            color: #1f2f44;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 1.1em;
+        }
+
+        .expertise-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .expertise-section div {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .expertise-section div:hover {
+            background-color: #e6e6e6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li:before {
+            content: "\2713";
+            color: #1f2f44;
+            margin-right: 10px;
+        }
+
+        .contact-details {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-details p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1f2f44;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #1f2f44;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Media Query for Mobile */
+        @media only screen and (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                padding: 50px 15px;
+                background-position: center top; /* Adjust background position for smaller screens */
+            }
+
+            .profile-section .content {
+                width: 100%; /* Full width on mobile */
+                margin: 0; /* Remove the right margin */
+                text-align: left; /* Align text to the left on mobile for better readability */
+                background: rgba(0, 0, 0, 0.5); /* Increase the background overlay on mobile */
+            }
+
+            .profile-section h2 {
+                font-size: 1.8em; /* Reduce the heading size on mobile */
+            }
+
+            .profile-section p {
+                font-size: 1em; /* Reduce the paragraph font size on mobile */
+            }
+
+            .expertise-section {
+                grid-template-columns: 1fr; /* Single column layout for expertise section on mobile */
+            }
+
+            h2 {
+                font-size: 1.6em; /* Adjust heading size on smaller screens */
+            }
+
+            .container {
+                padding: 15px; /* Reduce padding on mobile */
+            }
+
+            p {
+                font-size: 1em; /* Adjust text size for mobile readability */
+            }
+
+            footer {
+                font-size: 0.8em; /* Reduce font size in footer for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yatirajan - Archaka & Yagnacharya</h1>
+</header>
+
+<div class="profile-section">
+    <div class="content">
+        <h2>About Yatirajan</h2>
+        <p><strong>Yatirajan</strong> is a distinguished Archaka by birth, coming from a long lineage of priests in the Vamshaparamparya. His ancestors were renowned Archakas, and Yatirajan continues this proud family tradition. With over 25 years of experience, he has mastered the performance of poojas, homas, and shantis with deep dedication and spiritual insight.</p>
+        <p>Yatirajan has completed the Pravara and Praveena courses in Pancharatraagama, further solidifying his expertise in ancient Vedic practices.</p>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Spiritual Services Offered</h2>
+    <div class="expertise-section">
+        <div>
+            <h3>Poojas</h3>
+            <p>Specializing in ceremonies for various occasions such as Griha Pravesh (housewarming), Satyanarayan pooja, and many others.</p>
+        </div>
+        <div>
+            <h3>Homas</h3>
+            <p>Performing powerful fire rituals to bring peace, prosperity, and purification.</p>
+        </div>
+        <div>
+            <h3>Shantis</h3>
+            <p>Calming rituals to dispel negative energies and promote peace in homes and businesses.</p>
+        </div>
+        <div>
+            <h3>Consultation Services</h3>
+            <p>Offering advice on the right rituals and spiritual practices based on individual or family astrology.</p>
+        </div>
+        <div>
+            <h3>Temple Samprokshana</h3>
+            <p>Expert in performing Temple Samprokshana, a ritual to consecrate and purify temples and their sanctum.</p>
+        </div>
+        <div>
+            <h3>Kumbashikas</h3>
+            <p>Performing Kumbashikas, powerful ceremonies related to temple sanctification and deity awakening.</p>
+        </div>
+        <div>
+            <h3>Pavithrosthavas</h3>
+            <p>Specializing in Pavithrosthavas, a purification ceremony to renew temples and deities for prosperity.</p>
+        </div>
+        <div>
+            <h3>Brahmotsava</h3>
+            <p>Expertise in organizing and leading the Brahmotsava, the grand festival dedicated to temple deities.</p>
+        </div>
+        <div>
+            <h3>Kalyanothsavas</h3>
+            <p>Conducting Kalyanothsavas, marriage ceremonies of deities, celebrated with great grandeur in temples.</p>
+        </div>
+        <div>
+            <h3>All Temple Programs</h3>
+            <p>Yatirajan is proficient in handling all types of temple programs, ensuring smooth execution and spiritual fulfillment.</p>
+        </div>
+    </div>
+
+    <h2>Khagola Yatra - A Journey of Global Spiritual Significance</h2>
+    <p>Yatirajan recently took on the prestigious role of Yagnacharya in the Khagola Yatra, an unprecedented spiritual event that traversed multiple countries around the world. This journey, centered around performing the sacred Sri Sita Rama Kalyanam, aimed at promoting world peace and unity through ancient Vedic rituals.</p>
+    <p><strong>Key Highlights of the Khagola Yatra:</strong></p>
+    <ul>
+        <li>August 17th: Inauguration with an all-day pooja in Ayodhya, India.</li>
+        <li>August 19th to September 17th: The journey spanned across continents, including major events in Cambodia, Australia, South Africa, Argentina, the USA (California and Alaska), Iceland, Japan, and more.</li>
+        <li>September 17th: Conclusion with an all-day pooja in Bhadrachalam, India.</li>
+    </ul>
+    <p>As Yagnacharya, Yatirajan’s role in performing homas was crucial to the success of the Yatra, invoking divine energies to bless the world with peace.</p>
+
+    <h2>Master of Homas</h2>
+    <p>Yatirajan’s decades of experience performing homas have made him one of the most sought-after spiritual practitioners. His homas are known for their precise execution and powerful impact, invoking divine energy for prosperity, health, and overall well-being.</p>
+
+    <h2>Contact Details</h2>
+    <div class="contact-details">
+        <p><strong>Name:</strong> Yatirajan</p>
+        <p><strong>Phone:</strong> +919448612948</p>
+        <p><strong>Location:</strong> Bengaluru, India</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Yatirajan | Archaka & Yagnacharya | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
